@@ -13,12 +13,29 @@ header, footer {
     color: white;
     text-align: center;
     padding: 1.5rem;
-    display:flex;
     border-radius: 20px;
     box-shadow: 0px 0px 40px 10px grey;
 }
 
+header {
+    display: flex;
+    align-items: center;
+}
+
+img, h1 {
+    margin: auto;
+}
+
 img {
-    margin: 10px;
     box-shadow: 0px 0px 20px 1px black;
+}
+
+h1, h2 {
+    font-family: "Gill Sans Extrabold", sans-serif;
+    text-shadow: rgb(46, 45, 45) 1px 0 10px;
+}
+
+section {
+    font-family: monospace;
+    padding: .5em 0;
 }
