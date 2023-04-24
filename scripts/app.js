@@ -1,10 +1,6 @@
-// const currentYear = document.querySelector("#currentYear");
 const d = new Date();
-// // const dayName = daynames[d.getDay()];
-// // const monthName = months[d.getMonth()];
 const year = d.getFullYear();
-// const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
-// document.querySelector("#date2").textContent = fulldate;
 document.querySelector("#currentYear").textContent = year;
+
 const lastUpdated = document.lastModified;
 document.querySelector("#lastUpdated").textContent = lastUpdated;
