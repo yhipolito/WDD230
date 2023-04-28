@@ -1,5 +1,4 @@
 body {
-    font-size: 18px;
     line-height: 1.5;
 }
 
@@ -13,12 +12,10 @@ header, footer {
     color: white;
     text-align: center;
     padding: 1.5rem;
-    border-radius: 20px;
     box-shadow: 0px 0px 40px 10px grey;
 }
 
 header {
-    display: flex;
     align-items: center;
 }
 
