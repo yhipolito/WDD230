@@ -36,6 +36,7 @@ section {
     margin: 0.5rem;
 	border: 1px solid #bbb;
 	padding: 0 1rem;
+    border-radius: 15px 15px 0px 0px
 }
 
 /* table views ******************************/
