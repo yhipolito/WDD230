@@ -30,20 +30,13 @@ img {
     margin: 30px auto;
 }
 
-section:not(.design-heading) {
+section {
     display: block;
     background-color: #eee;
     margin: 0.5rem;
 	border: 1px solid #bbb;
 	padding: 0 1rem;
     border-radius: 15px 15px 0px 0px
-}
-
-.design-heading {
-    background-color: blue;
-    background-size: contain;
-    margin: 0;
-    padding: 0;
 }
 
 /* table views ******************************/
