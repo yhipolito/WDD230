@@ -1,0 +1,53 @@
+body {
+    line-height: 1.5;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+header, footer {
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header {
+    align-items: center;
+}
+
+img, h1 {
+    margin: auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 30px auto;
+}
+
+section {
+    display: block;
+    background-color: #eee;
+    margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0 1rem;
+}
+
+/* table views ******************************/
+@media only screen and (min-width: 37.5em) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }    
+}
+
+/* Desktop views ******************************/
+@media only screen and (min-width: 68em) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
