@@ -42,6 +42,9 @@ section {
 @media only screen and (min-width: 37.5em) {
     main {
         grid-template-columns: 1fr 1fr;
+    }
+    .third-principle {
+        grid-column: span 2;
     }    
 }
 
@@ -49,5 +52,8 @@ section {
 @media only screen and (min-width: 68em) {
     main {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .third-principle {
+        grid-column: span 1;
     }
 }
