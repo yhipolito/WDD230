@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=Rubik+Mono+One&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +8,7 @@
 
 body {
   font-size: 16px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Helvetica, sans-serif;
+  font-family: PT Mono, monospace, sans-serif;
 }
 
 header,
@@ -30,17 +32,20 @@ footer {
 h1 {
 	font-size: 2rem;
 	text-align: center;
+	font-family: "Rubik Mono One", sans-serif;
 }
 
 h2 {
 	padding: .5rem;
 	color: #302014;
 	text-align: center;
+	font-weight: 200;
 }
 
 p {
 	padding: .5rem;
-	text-align: center;
+	text-align: justify;
+  	text-justify: inter-word;
 }
 
 nav {
