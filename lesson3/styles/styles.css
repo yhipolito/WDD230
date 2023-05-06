@@ -40,6 +40,7 @@ h2 {
 	color: #302014;
 	text-align: center;
 	font-weight: 200;
+	font-family: "Rubik Mono One", sans-serif;
 }
 
 p {
@@ -97,6 +98,34 @@ footer {
 	justify-content: space-between;
 	font-weight: 700;
 }
+
+.colors {
+	width: 100%;
+	min-width: 350px;
+	margin: 30px auto;
+	text-align: center;
+  }
+  .colors th {
+	background-color: #999;
+  }
+  .colors td{
+	width: 25%;
+	height: 3em;
+	color: white;
+  }
+  
+  .primary {
+	background-color: #FEAB6B;
+  }
+  .secondary {
+	background-color: #302014;
+  }
+  .accent1 {
+	background-color: #6E492D;
+  }
+  .accent2{
+	background-color: #22170E;
+  }
 
 /***********************************************/
 /** Media Queries for larger views *************/
