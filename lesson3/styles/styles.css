@@ -142,10 +142,10 @@ footer {
 	main {
 		grid-template-columns: 1fr 1fr;
 	}
-	/* main article:nth-child(3) {
+	main article:nth-child(3) {
 		grid-column: span 2;
-		align-items: center;
-	} */
+		/* align-items: center; */
+	}
 }
 
 @media (min-width: 68em) {
@@ -155,8 +155,8 @@ footer {
 	main {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
-	/* main article:nth-child(3) {
+	main article:nth-child(3) {
 		grid-column: span 1;
-		align-items: center;
-	} */
+		/* align-items: center; */
+	}
 }
