@@ -29,21 +29,24 @@ footer {
 
 h1 {
 	font-size: 2rem;
+	text-align: center;
 }
 
 h2 {
 	padding: .5rem;
 	color: #302014;
+	text-align: center;
 }
 
 p {
 	padding: .5rem;
+	text-align: center;
 }
 
 nav {
 	background-color: #302014;
 	text-align: center;
-	box-shadow: 0 0 30px #333;
+	/* box-shadow: 0 0 30px #333; */
 	display: flex;
 	flex-direction: column;
 }
