@@ -1,0 +1,113 @@
+body {
+	padding: 0;
+	margin: 0;
+    font-family: Helvetica, sans-serif;
+    background-color: #bbb;
+}
+
+header {
+	background-color: #fff;
+	padding: 5px 0;
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+header picture img {
+	width: 80px;
+	height: auto;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+}
+
+.headings h1 {
+	font-size: 1.6rem;
+    margin: 0 0 0 17px;
+}
+
+.motto {
+	font-style: italic;
+    letter-spacing: 1pt;
+	color: forestgreen;
+	font-size: .9rem;
+    margin-left: 20px;
+}
+
+header nav button{
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #555;
+}
+
+header nav {
+    background-color: #eee;
+    width: 100%;
+}
+
+header nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: #333;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+header nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+header nav ul {
+    display: none;
+}
+
+header nav ul.open {
+    display: block;
+}
+
+#hamburgerBtn span:nth-child(1){display: block;}
+#hamburgerBtn span:nth-child(2){display: none;}
+
+#hamburgerBtn.open span:nth-child(1){display: none;}
+#hamburgerBtn.open span:nth-child(2){display: block;}
+
+time {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0.75rem 1rem;
+	background-color: #eee;
+}
+
+
+/* Larger viewports */
+@media only screen and (min-width: 32.5em) {
+	header picture img {
+		width: 100%;
+	}
+
+	.headings h1 {
+		font-size: 3rem;
+	}
+
+	.motto {
+		letter-spacing: 1.5pt;
+		font-size: larger;
+        margin-left: 17px;
+	}
+}
