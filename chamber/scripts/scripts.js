@@ -12,14 +12,14 @@ const datefield = document.querySelector("time");
 
 // derive the current date using a date object
 const now = new Date();
-const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
+const fulldate = new Intl.DateTimeFormat("en-UK", { dateStyle: "full" }).format(
 	now
 );
-const fulldateUK = new Intl.DateTimeFormat("en-UK", {
-	dateStyle: "full"
-}).format(now);
-// "full" or long, medium, short options ... try them
 
 datefield.textContent = fulldate;
-datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
-datemessage.innerHTML = `Today is <strong>${fulldate}</strong>. What are you going to do?`;
+
+const year = now.getFullYear();
+document.querySelector("#currentYear").textContent = year;
+
+const lastUpdated = document.lastModified;
+document.querySelector("#lastUpdated").textContent = lastUpdated;
