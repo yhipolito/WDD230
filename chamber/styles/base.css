@@ -15,22 +15,43 @@ header {
 	background-color: lightsalmon;
 	display: flex;
     flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	/* align-items: center;
+    justify-content: space-between; */
+	/* justify-content: center; */
 }
 
-header picture img {
+.top-bar {
+    /* display: flex; */
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    /* background-color: lightsalmon; */
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 2vw;
+}
+
+header img {
 	width: 80px;
 	height: auto;
+}
+
+a {
+    text-decoration: none;
 }
 
 .headings {
 	display: flex;
 	flex-direction: column;
+    justify-content: center;
 }
 
 .headings h1 {
-	font-size: 1.6rem;
+	font-size: 1.3rem;
     margin: 0 0 0 17px;
 }
 
@@ -48,11 +69,14 @@ header nav button{
     border: none;
     font-size: 2rem;
     color: #555;
+    position:absolute;
+    top: 15px;
+    right: 0px;
 }
 
-header nav {
+header nav, header span {
     background-color: #eee;
-    width: 100%;
+    margin: 0 10px;
 }
 
 header nav ul{
@@ -78,6 +102,10 @@ header nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
+/* header.top-bar nav {
+    display: block;
+} */
+
 header nav ul {
     display: none;
 }
@@ -91,11 +119,12 @@ header nav ul.open {
 
 #hamburgerBtn.open span:nth-child(1){display: none;}
 #hamburgerBtn.open span:nth-child(2){display: block;}
+/* #top-bar.open {display: block;} */
 
 time {
-	margin: 10px;
+    margin: 2vw;
 	border: 1px solid #bbb;
-	padding: 0.75rem 1rem;
+	padding: 0.75rem 2vw;
 	background-color: #eee;
 }
 
@@ -103,21 +132,18 @@ main {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-    margin: 20px 10px;
+    margin: 15px 10px;
 }
 
-div {
-    /* padding: 20 auto; */
+main div {
     border: 1px solid rgba(0, 0, 0, 0.3);
     height: 150px;
     background-color: #eee;
-    margin: 2vw;
 }
 
 section {
     border: 1px solid rgba(0, 0, 0, 0.3);
     background-color: #eee;
-    margin: 2vw;
 }
 
 div p {
@@ -128,7 +154,6 @@ section {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    margin: 10px;
 }
 
 footer {
@@ -149,22 +174,4 @@ footer h2 {
 
 footer picture {
  padding: 10px;
-}
-
-
-/* Larger viewports */
-@media only screen and (min-width: 32.5em) {
-	header picture img {
-		width: 100%;
-	}
-
-	.headings h1 {
-		font-size: 3rem;
-	}
-
-	.motto {
-		letter-spacing: 1.5pt;
-		font-size: larger;
-        margin-left: 17px;
-	}
 }
