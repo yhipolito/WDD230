@@ -2,11 +2,11 @@ body {
 	padding: 0;
 	margin: 0;
     font-family: Helvetica, sans-serif;
-    background-color: #bbb;
+    background-color: #fff;
 }
 
 header {
-	background-color: #fff;
+	background-color: lightsalmon;
 	padding: 5px 0;
 	display: flex;
     flex-direction: column;
@@ -92,6 +92,58 @@ time {
 	border: 1px solid #bbb;
 	padding: 0.75rem 1rem;
 	background-color: #eee;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin: 20px 10px;
+}
+
+div {
+    /* padding: 20 auto; */
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    height: 150px;
+    background-color: #eee;
+    margin: 2vw;
+}
+
+section {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #eee;
+    margin: 2vw;
+}
+
+div p {
+    margin-left: 2vw;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+
+footer {
+	background-color: lightsalmon;
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+footer p {
+    margin: 5px auto;
+}
+
+footer h2 {
+    margin: 5px auto;
+}
+
+footer picture {
+ padding: 10px;
 }
 
 
