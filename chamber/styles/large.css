@@ -26,11 +26,12 @@
   main {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    padding: 5px 20px;
+    margin: 15px 30px;
+    gap: 10px;
   }
 
   main div {
-    height: 200px;
+    height: 300px;
   }
 
   section div.spotlight3 {
@@ -62,7 +63,7 @@
   div.event {
     grid-column: 1/2;
     grid-row: 1/2;
-    /* margin: 0 5px 0 0; */
+    margin: 0;
   }
 
   div.weather {
