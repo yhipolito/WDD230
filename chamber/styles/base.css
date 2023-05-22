@@ -126,6 +126,7 @@ time {
 	border: 1px solid #bbb;
 	padding: 0.75rem 2vw;
 	background-color: #eee;
+    text-align: center;
 }
 
 main {
@@ -141,11 +142,6 @@ main div {
     background-color: #eee;
 }
 
-section {
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    background-color: #eee;
-}
-
 div p {
     margin-left: 2vw;
 }
@@ -154,6 +150,8 @@ section {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #eee;
 }
 
 footer {
@@ -174,4 +172,12 @@ footer h2 {
 
 footer picture {
  padding: 10px;
+}
+
+div.join {
+    display: none;
+}
+
+section div.spotlight3 {
+    display: none;
 }

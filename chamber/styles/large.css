@@ -1,24 +1,73 @@
 /* 64rem is also 1028px when basefont is 16px*/
 @media only screen and (min-width: 64rem) {
-    header nav ul li a {
-        margin: .5rem 1rem;
-    }
+  header nav ul li a {
+    margin: 0.5rem 1rem;
+  }
 
-    header nav button {
-        display: none;
-    }
+  header nav button {
+    display: none;
+  }
 
-    header nav ul#primaryNav {
-      display: flex;
-      margin-left: 2vw;
-      border-left: 1px solid rgba(0, 0, 0, 0.3);
-    }
-  
-    header nav ul li a{
-      border-top: none;
-      border-right: 1px solid rgba(0, 0, 0, 0.3);
-    }
-    .top-bar {
-      display: flex;
-    }
+  header nav ul#primaryNav {
+    display: flex;
+    margin-left: 2vw;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  header nav ul li a {
+    border-top: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  .top-bar {
+    display: flex;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 5px 20px;
+  }
+
+  main div {
+    height: 200px;
+  }
+
+  section div.spotlight3 {
+    display: block;
+  }
+
+  div.hero {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    height: 100%;
+  }
+
+  div.join {
+    display: block;
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  section {
+    grid-column: 3/4;
+    grid-row: 1/4;
+  }
+
+  div.news {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  div.event {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    /* margin: 0 5px 0 0; */
+  }
+
+  div.weather {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 0;
+  }
 }
