@@ -39,7 +39,7 @@
         display: none;
     }
 
-    div.hero {
+    div.clearfix {
         grid-column: 1/3;
     }
 

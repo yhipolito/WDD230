@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 * {
-    margin: 0;
+    /* margin: 0; */
     padding: 0;
     box-sizing: border-box;
 }
@@ -135,10 +135,17 @@ main {
     row-gap: 10px;
     margin: 15px 10px;
 }
+picture.heropicture{
+    width: 100%;
+}
+
+main div picture img {
+    width: 100%;
+}
 
 main div {
     border: 1px solid rgba(0, 0, 0, 0.3);
-    height: 150px;
+    /* height: 150px; */
     background-color: #eee;
 }
 
@@ -172,6 +179,11 @@ footer h2 {
 
 footer picture {
  padding: 10px;
+ text-align: center;
+}
+
+footer picture img{
+    width: 50%;
 }
 
 div.join {
@@ -181,3 +193,10 @@ div.join {
 section div.spotlight3 {
     display: none;
 }
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
