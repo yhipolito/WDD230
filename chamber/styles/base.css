@@ -147,10 +147,11 @@ main div {
     border: 1px solid rgba(0, 0, 0, 0.3);
     /* height: 150px; */
     background-color: #eee;
+    text-align: center;
 }
 
 div p {
-    margin-left: 2vw;
+    margin: 1vw .5vw;
 }
 
 section {
