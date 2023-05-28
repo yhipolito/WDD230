@@ -12,6 +12,7 @@ const datefield = document.querySelector("time");
 
 // derive the current date using a date object
 const now = new Date();
+const today = now.getDay();
 const fulldate = new Intl.DateTimeFormat("en-UK", { dateStyle: "full" }).format(
 	now
 );
@@ -23,3 +24,18 @@ document.querySelector("#currentYear").textContent = year;
 
 const lastUpdated = document.lastModified;
 document.querySelector("#lastUpdated").textContent = lastUpdated;
+
+// script for the banner on top of the header //
+
+const bannerButton = document.getElementById("bannerButton");
+const header = document.querySelector("header");
+const banner = document.querySelector("#banner");
+
+if (today===1||today===2){
+    document.getElementById("banner").classList.toggle("open");
+}
+
+bannerButton.addEventListener('click', () => {
+	header.removeChild(banner);
+});
+

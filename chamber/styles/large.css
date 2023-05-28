@@ -50,7 +50,7 @@
     grid-row: 3/4;
   }
 
-  section {
+  div.spotlights {
     grid-column: 3/4;
     grid-row: 1/4;
   }
