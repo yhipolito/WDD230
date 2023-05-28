@@ -154,7 +154,7 @@ div p {
     margin: 1vw .5vw;
 }
 
-section {
+.spotlights {
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -191,7 +191,7 @@ div.join {
     display: none;
 }
 
-section div.spotlight3 {
+div.spotlight3 {
     display: none;
 }
 
