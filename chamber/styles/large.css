@@ -23,16 +23,24 @@
     display: flex;
   }
 
+  header img {
+    width: 80%;
+  }
+
+  .headings h1 {
+    font-size: 4rem;
+  }
+
+  .headings q.motto {
+    font-size: 2rem;
+  }
+
   main {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     margin: 1rem 6rem;
     gap: 1rem;
   }
-
-  /* main div {
-    height: 200px;
-  } */
 
   section div.spotlight3 {
     display: block;
@@ -70,5 +78,32 @@
     grid-column: 1/2;
     grid-row: 2/3;
     margin: 0;
+  }
+  footer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  div.footerLogo {
+    grid-column: 2/3;
+    align-items: center;
+  }
+  div.footerLogo picture {
+    width: 30%;
+    float: left;
+    margin: 0 2vw 0 0;
+  }
+  div.footerLogo picture img{
+    width: 100%;
+    object-fit: cover;
+  }
+  div.contact {
+    grid-column: 3/4;
+    text-align: center;
+  }
+
+  div.bottom {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    text-align: center;
+    border-top: 1px solid #555;
   }
 }

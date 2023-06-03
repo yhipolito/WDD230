@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 * {
-    /* margin: 0; */
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -29,6 +29,7 @@ header {
     align-items: center;
     flex: 1;
     padding: 2vw;
+    margin: 3vw 2vw 1vw;
 }
 
 header img {
@@ -37,7 +38,7 @@ header img {
 }
 
 #banner{
-    background-color: lightseagreen;
+    background-color: #53b3ed;
     display: none;
     padding: 2vw 4vw;
     text-align: center;
@@ -55,16 +56,15 @@ a {
 
 .headings h1 {
 	font-size: 1.3rem;
-    margin: 0 0 0 17px;
+    margin: 0 0 0 .5rem;
 }
 
 .motto {
 	font-style: italic;
     letter-spacing: 1pt;
 	color: darkgreen;
-    /* font-weight: bold; */
-	font-size: .9rem;
-    margin-left: 20px;
+	font-size: .8rem;
+    margin-left: .5rem;
 }
 
 header nav button{
@@ -80,7 +80,8 @@ header nav button{
 
 header nav, header span {
     background-color: #eee;
-    margin: 0 10px;
+    padding: 0 1vw;
+    border-radius: 3px;
 }
 
 header nav ul{
@@ -106,10 +107,6 @@ header nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* header.top-bar nav {
-    display: block;
-} */
-
 header nav ul {
     display: none;
 }
@@ -120,8 +117,6 @@ header nav ul.open {
 
 #hamburgerBtn span:nth-child(1){display: block;}
 #hamburgerBtn span:nth-child(2){display: none;}
-/* header div#banner.open {display: block;} */
-/* header div#banner {display: block;} */
 
 #hamburgerBtn.open span:nth-child(1){display: none;}
 #hamburgerBtn.open span:nth-child(2){display: block;}
@@ -130,7 +125,7 @@ header nav ul.open {
 time {
     margin: 2vw;
 	border: 1px solid #bbb;
-	padding: 0.75rem 2vw;
+	padding: 2vw;
 	background-color: #eee;
     text-align: center;
 }
@@ -141,17 +136,15 @@ main {
     row-gap: 10px;
     margin: 15px 10px;
 }
-/* picture.heropicture{
-    width: 100%;
-} */
 
 main div picture img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 main div {
     border: 1px solid rgba(0, 0, 0, 0.3);
-    /* height: 150px; */
     background-color: #eee;
     text-align: center;
 }
@@ -170,10 +163,27 @@ div p {
 
 footer {
 	background-color: lightsalmon;
-	display: flex;
-    flex-direction: column;
-	align-items: center;
-	justify-content: center;
+}
+div.footerLogo picture{
+    object-fit: cover;
+    margin: 2vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+div.footerLogo picture img{
+    object-fit: cover;
+    width: 35%;
+    margin: 4vw 0 0 0;
+}
+div.footerLogo{
+    text-align: center;
+}
+div.contact{
+    text-align: center;
+}
+div.bottom{
+    text-align: center;
 }
 
 footer p {
@@ -182,15 +192,6 @@ footer p {
 
 footer h2 {
     margin: 5px auto;
-}
-
-footer picture {
- padding: 10px;
- text-align: center;
-}
-
-footer picture img{
-    width: 50%;
 }
 
 div.join {
