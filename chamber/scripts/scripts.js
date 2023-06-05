@@ -38,4 +38,3 @@ if (today===1||today===2){
 bannerButton.addEventListener('click', () => {
 	header.removeChild(banner);
 });
-
