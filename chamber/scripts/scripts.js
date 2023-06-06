@@ -1,9 +1,9 @@
 function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("open");
-    document.getElementById("hamburgerBtn").classList.toggle("open");
+  document.getElementById("primaryNav").classList.toggle("open");
+  document.getElementById("hamburgerBtn").classList.toggle("open");
 }
 
-const x = document.getElementById("hamburgerBtn")
+const x = document.getElementById("hamburgerBtn");
 x.onclick = toggleMenu;
 
 // select the DOM elements to manipulate (we will output to these)
@@ -14,7 +14,7 @@ const datefield = document.querySelector("time");
 const now = new Date();
 const today = now.getDay();
 const fulldate = new Intl.DateTimeFormat("en-UK", { dateStyle: "full" }).format(
-	now
+  now
 );
 
 datefield.textContent = fulldate;
@@ -31,10 +31,36 @@ const bannerButton = document.getElementById("bannerButton");
 const header = document.querySelector("header");
 const banner = document.querySelector("#banner");
 
-if (today===1||today===2){
-    document.getElementById("banner").classList.toggle("open");
+if (today === 1 || today === 2) {
+  document.getElementById("banner").classList.toggle("open");
 }
 
-bannerButton.addEventListener('click', () => {
-	header.removeChild(banner);
+bannerButton.addEventListener("click", () => {
+  header.removeChild(banner);
 });
+
+let imagesToLoad = document.querySelectorAll("img[data-src]");
+const loadImages = (image) => {
+  image.setAttribute("src", image.getAttribute("data-src"));
+  image.onload = () => {
+    image.removeAttribute("data-src");
+  };
+};
+
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver((items, observer) => {
+    items.forEach((item) => {
+      if (item.isIntersecting) {
+        loadImages(item.target);
+        observer.unobserve(item.target);
+      }
+    });
+  });
+  imagesToLoad.forEach((img) => {
+    observer.observe(img);
+  });
+} else {
+  imagesToLoad.forEach((img) => {
+    loadImages(img);
+  });
+}
