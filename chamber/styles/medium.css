@@ -9,18 +9,31 @@
     }
 
     .top-bar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    header nav{
+        grid-column: 1/3;
+        width: 96%;
+        margin: 0 auto;
+        padding: 0 0 0 0;
+    }
+    .social{
         display: flex;
+        justify-content: flex-end;
+        margin: 0 2vw 0 0;
     }
 
     header nav ul#primaryNav {
       display: flex;
-      margin-left: 2vw;
+      /* margin-left: 2vw; */
       border-left: 1px solid rgba(0, 0, 0, 0.3);
     }
   
     header nav ul li a{
       border-top: none;
       border-right: 1px solid rgba(0, 0, 0, 0.3);
+      padding: 1rem 3.5rem;
     }
 
     main {
