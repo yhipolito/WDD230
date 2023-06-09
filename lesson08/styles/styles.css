@@ -1,6 +1,6 @@
 :root {
   --back: rgb(0, 0, 0);
-  --back2: hsla(154, 3%, 43%, 0.5);
+  --back2:rgb(66, 64, 64);
   --foredark: hsla(0, 0%, 10%, 1);
   --forelight: hsla(0, 0%, 100%, 1);
   --border: hsla(0, 0%, 20%, 0.8);
