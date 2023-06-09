@@ -20,7 +20,17 @@
   }
 
   .top-bar {
-    display: flex;
+    display: grid;
+    font-size: 1.7rem;
+  }
+  time{
+    font-size: 1.7rem;
+  }
+
+  .fa{
+    padding: 20px;
+    width: 4rem;
+    margin: 0 1rem;
   }
 
   header img {
@@ -40,6 +50,7 @@
     grid-template-columns: 1fr 2fr 1fr;
     margin: 1rem 6rem;
     gap: 1rem;
+    font-size: 1.5rem;
   }
 
   section div.spotlight3 {
