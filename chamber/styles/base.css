@@ -220,6 +220,74 @@ div p {
   background-color: #eee;
 }
 
+/*------------FORM---------------*/
+form{
+  grid-column: 1/4;
+}
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid darkgreen;
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+  font-size: 1rem;
+}
+
+form legend {
+  color: darkgreen;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: #9c2c13;
+  font-size: 0.8rem;
+  border: none;
+  background-color: white;
+  text-align: left;
+}
+
+form label.top input,
+form label.top textarea {
+  /* -webkit-appearance: none; */
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #555;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.75rem 0;
+  color: #555;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #9c2c13;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
 footer {
   background-color: lightsalmon;
 }
