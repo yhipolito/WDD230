@@ -76,6 +76,14 @@
         margin: 0 0 0 5px;
     }
 
+    /*---------------FORM-------------------*/
+
+    form span{
+        display: inline;
+    }
+
+    /*---------------FOOTER-------------------*/
+
     footer {
         display: grid;
         grid-template-columns: 60% 1fr;
