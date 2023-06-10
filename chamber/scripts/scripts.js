@@ -17,7 +17,6 @@ const today = now.getDay();
 const fulldate = new Intl.DateTimeFormat("en-UK", { dateStyle: "full" }).format(
   now
 );
-formdate.textContent = now;
 datefield.textContent = fulldate;
 
 const year = now.getFullYear();
@@ -100,3 +99,4 @@ localStorage.setItem("lastVisit", Date.now());
 // Date.now()
 // console.log(Date.now());
 
+formdate.textContent = now;
