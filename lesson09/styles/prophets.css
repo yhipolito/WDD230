@@ -2,6 +2,7 @@ h1 {
   color: #000;
   margin: 1.2rem 0;
   text-align: center;
+  border-bottom: 1px solid #bbb;
 }
 
 h2 {
@@ -40,4 +41,4 @@ img {
 footer {
     border-top: 1px solid #555;
     padding: 20px;
-  }
+}
