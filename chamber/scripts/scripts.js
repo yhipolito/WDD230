@@ -100,3 +100,53 @@ localStorage.setItem("lastVisit", Date.now());
 // console.log(Date.now());
 
 formdate.textContent = now;
+
+///-------------DIRECTORY COMPANIES--------///
+
+const url = 'https://yhipolito.github.io/WDD230/chamber/json/data.json';
+
+async function getCompanyData() {
+    const response = await fetch(url);
+    const data = await response.json();
+    displayCompanies(data.companies);
+    // console.table(data.companies); 
+    // note that we reference the prophet array of the data object given the structure of the json file   
+}
+getCompanyData();
+
+const displayCompanies = (companies) => {
+    const cards = document.querySelector('div.cards'); // select the output container element
+  
+    companies.forEach((company) => {
+      // Create elements to add to the div.cards element
+      let card = document.createElement('section');
+      let name = document.createElement('h2');
+      let address = document.createElement('p');
+      let phone = document.createElement('p');
+      let website = document.createElement('p');
+      let portrait = document.createElement('img');
+      let membershipLevel = document.createElement('p');
+  
+      // Build the name content out to show the companies'  name - finish the template string
+      name.textContent = `${company.name}`;
+      address.textContent = `Address: ${company.address}`;
+      phone.textContent = `Phone: ${company.phone}`;
+      website.textContent = `Website url: ${company.websiteUrl}`;
+      membershipLevel.textContent = `Address: ${company.membershipLevel}`;
+  
+      // Build the image by setting all the relevant attributes
+      portrait.setAttribute('src', company.imageurl);
+      portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
+      portrait.setAttribute('loading', 'lazy');
+      portrait.setAttribute('width', '340');
+      portrait.setAttribute('height', '440');
+  
+      // Append the section(card) with the created elements
+      card.appendChild(h2);
+      card.appendChild(dateOfBirth);
+      card.appendChild(placeOfBirth);
+      card.appendChild(portrait);
+  
+      cards.appendChild(card);
+    }); // end of forEach loop
+  } // end of function expression

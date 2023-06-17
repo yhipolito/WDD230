@@ -5,7 +5,7 @@
       "address": "address 1",
       "phoneNumber": 1235554545,
       "websiteUrl": "Company1.com",
-      "image": "http://placekitten.com/300/200",
+      "imageUrl": "http://placekitten.com/300/200",
       "membershipLevel": "Gold"
     },
     {
@@ -13,7 +13,7 @@
       "address": "address 2",
       "phoneNumber": 1235554545,
       "websiteUrl": "Company2.com",
-      "image": "http://placekitten.com/300/200",
+      "imageUrl": "http://placekitten.com/300/200",
       "membershipLevel": "Gold"
     },
     {
@@ -21,7 +21,7 @@
       "address": "address 3",
       "phoneNumber": 1235554545,
       "websiteUrl": "Company3.com",
-      "image": "http://placekitten.com/300/200",
+      "imageUrl": "http://placekitten.com/300/200",
       "membershipLevel": "Gold"
     },
     {
@@ -29,7 +29,7 @@
       "address": "address 4",
       "phoneNumber": 1235554545,
       "websiteUrl": "Company4.com",
-      "image": "http://placekitten.com/300/200",
+      "imageUrl": "http://placekitten.com/300/200",
       "membershipLevel": "Gold"
     },
     {
@@ -37,7 +37,7 @@
       "address": "address 5",
       "phoneNumber": 1235554545,
       "websiteUrl": "Company5.com",
-      "image": "http://placekitten.com/300/200",
+      "imageUrl": "http://placekitten.com/300/200",
       "membershipLevel": "Gold"
     },
     {
@@ -45,7 +45,7 @@
       "address": "address 6",
       "phoneNumber": 1235554545,
       "websiteUrl": "Company6.com",
-      "image": "http://placekitten.com/300/200",
+      "imageUrl": "http://placekitten.com/300/200",
       "membershipLevel": "Gold"
     },
     {
@@ -53,7 +53,7 @@
       "address": "address 7",
       "phoneNumber": 1235554545,
       "websiteUrl": "Company7.com",
-      "image": "http://placekitten.com/300/200",
+      "imageUrl": "http://placekitten.com/300/200",
       "membershipLevel": "Gold"
     },
     {
@@ -61,7 +61,7 @@
       "address": "address 8",
       "phoneNumber": 1235554545,
       "websiteUrl": "Company8.com",
-      "image": "http://placekitten.com/300/200",
+      "imageUrl": "http://placekitten.com/300/200",
       "membershipLevel": "Gold"
     },
     {
@@ -69,7 +69,7 @@
       "address": "address 9",
       "phoneNumber": 1235554545,
       "websiteUrl": "Company9.com",
-      "image": "http://placekitten.com/300/200",
+      "imageUrl": "http://placekitten.com/300/200",
       "membershipLevel": "Gold"
     }
   ]
