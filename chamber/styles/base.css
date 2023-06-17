@@ -346,3 +346,41 @@ div.spotlight3 {
   display: table;
   clear: both;
 }
+
+/*-----directory.html--------*/
+/* main.companies {
+  background-color: none;
+} */
+
+h2.companies {
+  color: navy;
+  margin: 0 0 1rem 0;
+}
+
+p.companies {
+  margin: 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section.companies {
+  margin: 0.25rem;
+  padding: 0.35rem;
+  background-color: #eee;
+  border: 1px solid #bbb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img.companies {
+  width: auto;
+  max-width: 325px;
+  box-shadow: 0 0 30px #777;
+  height: 200px;
+  border: 1px solid #333;
+  margin: 0.75rem 0;
+}

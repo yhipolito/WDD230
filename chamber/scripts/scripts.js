@@ -99,7 +99,7 @@ localStorage.setItem("lastVisit", Date.now());
 // Date.now()
 // console.log(Date.now());
 
-formdate.textContent = now;
+// formdate.textContent = now;
 
 ///-------------DIRECTORY COMPANIES--------///
 
@@ -109,7 +109,7 @@ async function getCompanyData() {
     const response = await fetch(url);
     const data = await response.json();
     displayCompanies(data.companies);
-    // console.table(data.companies); 
+    console.table(data.companies); 
     // note that we reference the prophet array of the data object given the structure of the json file   
 }
 getCompanyData();
@@ -120,22 +120,29 @@ const displayCompanies = (companies) => {
     companies.forEach((company) => {
       // Create elements to add to the div.cards element
       let card = document.createElement('section');
+      card.setAttribute('class', "companies");
       let name = document.createElement('h2');
+      name.setAttribute('class', "companies");
       let address = document.createElement('p');
+      address.setAttribute('class', "companies");
       let phone = document.createElement('p');
+      phone.setAttribute('class', "companies");
       let website = document.createElement('p');
+      website.setAttribute('class', "companies");
       let portrait = document.createElement('img');
       let membershipLevel = document.createElement('p');
+      membershipLevel.setAttribute('class', "companies");
   
       // Build the name content out to show the companies'  name - finish the template string
       name.textContent = `${company.name}`;
       address.textContent = `Address: ${company.address}`;
       phone.textContent = `Phone: ${company.phone}`;
-      website.textContent = `Website url: ${company.websiteUrl}`;
-      membershipLevel.textContent = `Address: ${company.membershipLevel}`;
+      website.textContent = `Website: ${company.websiteUrl}`;
+      membershipLevel.textContent = `Membership Level: ${company.membershipLevel}`;
   
       // Build the image by setting all the relevant attributes
       portrait.setAttribute('src', company.imageurl);
+      portrait.setAttribute('class', "companies");
       portrait.setAttribute('alt', `Portrait of ${company.name}`);
       portrait.setAttribute('loading', 'lazy');
       portrait.setAttribute('width', '300');
@@ -143,9 +150,12 @@ const displayCompanies = (companies) => {
   
       // Append the section(card) with the created elements
       card.appendChild(name);
+      card.appendChild(portrait);
       card.appendChild(address);
       card.appendChild(phone);
-      card.appendChild(portrait);
+      card.appendChild(website);
+      card.appendChild(membershipLevel);
+      
   
       cards.appendChild(card);
     }); // end of forEach loop
