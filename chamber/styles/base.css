@@ -17,8 +17,8 @@ header {
   flex-direction: column;
 }
 
-.social{
-  margin: 0 2vw .5rem;
+.social {
+  margin: 0 2vw 0.5rem;
 }
 
 .fa {
@@ -27,7 +27,7 @@ header {
   width: 48px;
   text-align: center;
   text-decoration: none;
-  margin: .25rem;
+  margin: 0.25rem;
   border-radius: 50%;
 }
 .fa:hover {
@@ -221,7 +221,7 @@ div p {
 }
 
 /*------------FORM---------------*/
-form{
+form {
   grid-column: 1/4;
 }
 form fieldset {
@@ -287,7 +287,7 @@ form label.top input:required:valid {
   border-left: green solid 6px;
 }
 
-form span{
+form span {
   display: none;
 }
 
@@ -352,6 +352,13 @@ main.companies {
   display: flex;
 }
 
+h1.companies {
+  color: #000;
+  margin: 0.5rem 0;
+  text-align: center;
+  /* border-bottom: 1px solid #bbb; */
+}
+
 h2.companies {
   color: navy;
   margin: 0 0 1rem 0;
@@ -383,4 +390,46 @@ img.companies {
   height: 200px;
   border: 1px solid #333;
   margin: 0.75rem 0;
+}
+
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: lightsalmon;
+	text-align: center;
+}
+
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list section {
+  display: grid;
+  /* grid-template-columns: 2fr 1fr 1fr; */
+  margin: 0;
+  padding: 1rem 0.25rem;
+}
+
+.list section > * {
+  margin: 0 1rem;
+}
+
+.list section img {
+  display: none; /* smaller viewports only */
+}
+
+.list section h2 {
+  font-size: 1rem;
+  font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+  background-color: #bed;
 }
