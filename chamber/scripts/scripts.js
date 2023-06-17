@@ -136,15 +136,15 @@ const displayCompanies = (companies) => {
   
       // Build the image by setting all the relevant attributes
       portrait.setAttribute('src', company.imageurl);
-      portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
+      portrait.setAttribute('alt', `Portrait of ${company.name}`);
       portrait.setAttribute('loading', 'lazy');
-      portrait.setAttribute('width', '340');
-      portrait.setAttribute('height', '440');
+      portrait.setAttribute('width', '300');
+      portrait.setAttribute('height', '200');
   
       // Append the section(card) with the created elements
-      card.appendChild(h2);
-      card.appendChild(dateOfBirth);
-      card.appendChild(placeOfBirth);
+      card.appendChild(name);
+      card.appendChild(address);
+      card.appendChild(phone);
       card.appendChild(portrait);
   
       cards.appendChild(card);
