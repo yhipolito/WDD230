@@ -348,9 +348,9 @@ div.spotlight3 {
 }
 
 /*-----directory.html--------*/
-/* main.companies {
-  background-color: none;
-} */
+main.companies {
+  display: block;
+}
 
 h2.companies {
   color: navy;
