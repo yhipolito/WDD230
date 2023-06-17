@@ -349,7 +349,7 @@ div.spotlight3 {
 
 /*-----directory.html--------*/
 main.companies {
-  display: block;
+  display: flex;
 }
 
 h2.companies {
