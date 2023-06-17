@@ -1,0 +1,76 @@
+{
+  "companies": [
+    {
+      "name": "Company 1",
+      "address": "address 1",
+      "phoneNumber": 1235554545,
+      "websiteUrl": "Company1.com",
+      "imageOrIcon": "imageOrIcon1",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Company 2",
+      "address": "address 2",
+      "phoneNumber": 1235554545,
+      "websiteUrl": "Company2.com",
+      "imageOrIcon": "imageOrIcon2",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Company 3",
+      "address": "address 3",
+      "phoneNumber": 1235554545,
+      "websiteUrl": "Company3.com",
+      "imageOrIcon": "imageOrIcon3",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Company 4",
+      "address": "address 4",
+      "phoneNumber": 1235554545,
+      "websiteUrl": "Company4.com",
+      "imageOrIcon": "imageOrIcon4",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Company 5",
+      "address": "address 5",
+      "phoneNumber": 1235554545,
+      "websiteUrl": "Company5.com",
+      "imageOrIcon": "imageOrIcon5",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Company 6",
+      "address": "address 6",
+      "phoneNumber": 1235554545,
+      "websiteUrl": "Company6.com",
+      "imageOrIcon": "imageOrIcon6",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Company 7",
+      "address": "address 7",
+      "phoneNumber": 1235554545,
+      "websiteUrl": "Company7.com",
+      "imageOrIcon": "imageOrIcon7",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Company 8",
+      "address": "address 8",
+      "phoneNumber": 1235554545,
+      "websiteUrl": "Company8.com",
+      "imageOrIcon": "imageOrIcon8",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Company 9",
+      "address": "address 9",
+      "phoneNumber": 1235554545,
+      "websiteUrl": "Company9.com",
+      "imageOrIcon": "imageOrIcon9",
+      "membershipLevel": "Gold"
+    }
+  ]
+}
