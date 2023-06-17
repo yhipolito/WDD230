@@ -141,7 +141,7 @@ const displayCompanies = (companies) => {
       membershipLevel.textContent = `Membership Level: ${company.membershipLevel}`;
   
       // Build the image by setting all the relevant attributes
-      portrait.setAttribute('src', company.imageurl);
+      portrait.setAttribute('src', company.imageUrl);
       portrait.setAttribute('class', "companies");
       portrait.setAttribute('alt', `Portrait of ${company.name}`);
       portrait.setAttribute('loading', 'lazy');
