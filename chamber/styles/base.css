@@ -393,16 +393,16 @@ img.companies {
 }
 
 .menu {
-	margin: 1rem auto;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 0.5rem;
-	background-color: lightsalmon;
-	text-align: center;
+  margin: 1rem auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  background-color: lightsalmon;
+  text-align: center;
 }
 
 .menu button {
-	padding: 1rem;
-	font-weight: 700;
+  padding: 1rem;
+  font-weight: 700;
 }
 
 .list {
@@ -412,7 +412,6 @@ img.companies {
 
 .list section {
   display: grid;
-  /* grid-template-columns: 2fr 1fr 1fr; */
   margin: 0;
   padding: 1rem 0.25rem;
 }
