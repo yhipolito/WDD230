@@ -373,7 +373,7 @@ article {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-.grid section.companies {
+section.companies {
   margin: 0.25rem;
   padding: 0.35rem;
   background-color: #eee;
@@ -411,10 +411,9 @@ img.companies {
 }
 
 article.list section {
+  display: grid;
   margin: 0;
   padding: 1rem 0.25rem;
-  background-color: #eee;
-  border: 1px solid #bbb;
 }
 
 .list section > * {
