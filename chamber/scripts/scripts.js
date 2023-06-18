@@ -135,9 +135,9 @@ const displayCompanies = (companies) => {
 
     // Build the name content out to show the companies'  name - finish the template string
     name.textContent = `${company.name}`;
-    address.textContent = `Address: ${company.address}`;
-    phone.textContent = `Phone: ${company.phone}`;
-    website.textContent = `Website: ${company.websiteUrl}`;
+    address.textContent = `${company.address}, Sandy UT84094`;
+    phone.textContent = `+1 ${company.phone}`;
+    website.textContent = `${company.websiteUrl}`;
     membershipLevel.textContent = `Membership Level: ${company.membershipLevel}`;
 
     // Build the image by setting all the relevant attributes

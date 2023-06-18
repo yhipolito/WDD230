@@ -118,3 +118,12 @@
     }
   }
   
+  /*-----------directory.html------------------*/
+  .list section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0;
+    padding: 1rem 0.25rem;
+    font-size: 1rem;
+    align-items: baseline;
+  }
