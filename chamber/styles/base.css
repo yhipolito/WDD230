@@ -368,12 +368,12 @@ p.companies {
   margin: 0;
 }
 
-.cards {
+article {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-section.companies {
+.grid section.companies {
   margin: 0.25rem;
   padding: 0.35rem;
   background-color: #eee;
@@ -410,10 +410,11 @@ img.companies {
   flex-direction: column;
 }
 
-.list section {
-  display: grid;
+article.list section {
   margin: 0;
   padding: 1rem 0.25rem;
+  background-color: #eee;
+  border: 1px solid #bbb;
 }
 
 .list section > * {

@@ -53,6 +53,16 @@
     font-size: 1.3rem;
   }
 
+  main.companies {
+    margin: 1rem;
+    font-size: 1.3rem;
+  }
+
+  article.list section {
+    font-size: 1.3rem;
+    /* align-items: baseline; */
+  }
+
   section div.spotlight3 {
     display: block;
   }

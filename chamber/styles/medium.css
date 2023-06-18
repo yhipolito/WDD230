@@ -116,18 +116,22 @@
     text-align: center;
     border-top: 1px solid #555;
   }
+
+  /*-----------directory------------------*/
+
+  article.list section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0;
+    padding: 1rem 0.25rem;
+    font-size: 1rem;
+    align-items: baseline;
+  }
+  
+  .list section > * {
+    margin: 0 0.5rem;
+  }
 }
 
-/*-----------directory------------------*/
-/* .list section {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 0;
-  padding: 1rem 0.25rem;
-  font-size: 1rem;
-  align-items: baseline;
-} */
 
-.list section > * {
-  margin: 0 0.5rem;
-}
+
