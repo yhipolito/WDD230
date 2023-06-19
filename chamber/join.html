@@ -2,13 +2,17 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5Z0EGFNLM"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-F5Z0EGFNLM"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-F5Z0EGFNLM');
+      gtag("config", "G-F5Z0EGFNLM");
     </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -61,49 +65,63 @@
     <main>
       <form method="get" action="thankyou.html">
         <fieldset>
-            <legend>Applicant Information</legend>
-            <label class="top">
-                First name* <input type="text" name="fname" required>
-            </label>
-            <label class="top">
-                Last name* <input type="text" name="lname" required>
-            </label>
-            <label class="top">
-                Email* <input type="email" name="email" required placeholder="someone@gmail.com">
-            </label>
-            <label class="top">
-                Cell phone* <input type="tel" name="phone" required>
-            </label>
+          <legend>Applicant Information</legend>
+          <label class="top">
+            First name* <input type="text" name="fname" required />
+          </label>
+          <label class="top">
+            Last name* <input type="text" name="lname" required />
+          </label>
+          <label class="top">
+            Email*
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="someone@gmail.com" />
+          </label>
+          <label class="top">
+            Cell phone* <input type="tel" name="phone" required />
+          </label>
         </fieldset>
         <fieldset>
-            <legend>Bussines Information</legend>
-            <label class="top">
-                Business name* <input type="text" name="businessName" required>
-            </label>
-            <label class="top">
-                Business position <input type="text" name="title" pattern=".{7,}">
-            </label>
-            <label class="top">Busines description <textarea name="businessDescription" cols="30" rows="10"></textarea> 
-            </label>
+          <legend>Bussines Information</legend>
+          <label class="top">
+            Business name* <input type="text" name="businessName" required />
+          </label>
+          <label class="top">
+            Business position <input type="text" name="title" pattern=".{7,}" />
+          </label>
+          <label class="top"
+            >Busines description
+            <textarea name="businessDescription" cols="30" rows="10"></textarea>
+          </label>
         </fieldset>
         <fieldset>
-            <legend>Select Membership</legend>
-            <div class="membership">Membership level</div>
-            <label class="sbs">
-                <input type="radio" name="businessLevel" value="npMembership"> Np Membership <span>*cost: $0.00, free events notification plus</span>
-            </label>
-            <label class="sbs">
-                <input type="radio" name="businessLevel" value="bronze"> Bronze Membership <span>*cost: $25.00, 25% discount on events.</span>
-            </label>
-            <label class="sbs">
-                <input type="radio" name="businessLevel" value="silver"> Silver Membership <span>*cost: $50.00, 50% discount on events.</span>
-            </label>
-            <label class="sbs">
-                <input type="radio" name="businessLevel" value="gold"> Gold Membership <span>*cost: $75.00, free of charge for any event.</span>
-            </label>
+          <legend>Select Membership</legend>
+          <div class="membership">Membership level</div>
+          <label class="sbs">
+            <input type="radio" name="businessLevel" value="npMembership" /> Np
+            Membership <span>*cost: $0.00, free events notification plus</span>
+          </label>
+          <label class="sbs">
+            <input type="radio" name="businessLevel" value="bronze" /> Bronze
+            Membership <span>*cost: $25.00, 25% discount on events.</span>
+          </label>
+          <label class="sbs">
+            <input type="radio" name="businessLevel" value="silver" /> Silver
+            Membership <span>*cost: $50.00, 50% discount on events.</span>
+          </label>
+          <label class="sbs">
+            <input type="radio" name="businessLevel" value="gold" /> Gold
+            Membership <span>*cost: $75.00, free of charge for any event.</span>
+          </label>
         </fieldset>
-            <input type="hidden" id="date" name="date" value="CurrentTime">
-            <input type="submit" value="Apply for my Membership" class="submitBtn"> 
+        <input type="hidden" id="date" name="date" value="CurrentTime" />
+        <input
+          type="submit"
+          value="Apply for my Membership"
+          class="submitBtn" />
       </form>
     </main>
     <footer>
