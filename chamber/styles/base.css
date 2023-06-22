@@ -432,3 +432,20 @@ article.list section {
 .list section:nth-child(even) {
   background-color: #bed;
 }
+
+/*-----weather api--------*/
+figure{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+figure img, figure p {
+  grid-row: 1/2;
+}
+
+figcaption#description{
+  grid-row: 2/3;
+  grid-column: 1/3;
+}
