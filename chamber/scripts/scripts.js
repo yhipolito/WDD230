@@ -106,6 +106,8 @@ localStorage.setItem("lastVisit", Date.now());
 const currentTemp = document.querySelector('#temperature');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
+const windSpeed = document.querySelector("#windSpeed");
+const windChill = document.querySelector("#windChill");
 
 const urlw = "https://api.openweathermap.org/data/2.5/weather?q=Sandy,USA&appid=ac62c32e0537fc708a489b00c343f912&units=imperial"
 
@@ -127,7 +129,10 @@ async function apiFetch(){
 apiFetch();
 
 function displayResults(weatherData) {
-    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+    let t = weatherData.main.temp.toFixed(0);
+    currentTemp.innerHTML = `<strong>${t}</strong>`;
+    let s = weatherData.wind.speed;
+    windSpeed.textContent = `${s}`;
 
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
@@ -136,6 +141,15 @@ function displayResults(weatherData) {
     weatherIcon.setAttribute('alt', desc);
     // captionDesc.textContent = desc;
     captionDesc.innerHTML = `<i>${desc}</i>`;
+
+    if (t <= 50 && s > 3) {
+      f = Math.round(35.74 + 0.6215 * t - (35.75 * (s**0.16)) + 0.4275 * t * (s ** 0.16));
+      f = Math.round((f-32)/1.8);
+      windChill.innerHTML = `${f} &deg;F`;
+    } else {
+      f = "N/A";
+      windChill.textContent = f;
+    }
 }
 
 ///-------------DIRECTORY COMPANIES--------///
