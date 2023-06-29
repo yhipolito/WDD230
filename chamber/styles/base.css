@@ -221,7 +221,7 @@ div p {
 }
 
 /*------------FORM---------------*/
-form {
+form, section.contact {
   grid-column: 1/4;
 }
 form fieldset {
@@ -455,6 +455,16 @@ figcaption#description {
 /*-------------Contact--------------*/
 fieldset.contact{
   border: none;
-  margin: 0 0;
-  padding: 1rem auto;
+}
+
+section.contact {
+  text-align: center;
+}
+
+h1.contact{
+  margin: 1rem auto;
+}
+
+section h3 {
+  margin: .75rem auto .25 ;
 }
