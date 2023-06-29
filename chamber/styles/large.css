@@ -127,4 +127,9 @@
     text-align: center;
     border-top: 1px solid #555;
   }
+
+  /*------------contact----------------*/
+  section.contact fieldset input{
+    max-width: 540px;
+  }
 }

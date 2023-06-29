@@ -150,6 +150,16 @@
     max-width: none;
     width: 98%;
   }
+
+  section.contact form{
+    text-align: center;
+  }
+
+  section.contact h1{
+    margin: 2rem auto;
+    font-size: 2.25rem;
+  }
+
 }
 
 
