@@ -131,6 +131,25 @@
   .list section > * {
     margin: 0 0.5rem;
   }
+
+  /*----------------contact--------------------*/
+  main{
+    font-size: 18px;
+  }
+
+  section.contact h3{
+    margin-top: 2rem;
+  }
+
+  section.contact fieldset input{
+    max-width: none;
+    width: 98%;
+  }
+
+  section.contact fieldset textarea{
+    max-width: none;
+    width: 98%;
+  }
 }
 
 

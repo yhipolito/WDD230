@@ -455,16 +455,27 @@ figcaption#description {
 /*-------------Contact--------------*/
 fieldset.contact{
   border: none;
+  margin-top: 0;
+  padding: 0;
+}
+
+fieldset.contact label:first-of-type{
+  padding-top: 0;
 }
 
 section.contact {
-  text-align: center;
+  /* text-align: center; */
+  margin-left: 1rem;
 }
 
 h1.contact{
   margin: 1rem auto;
 }
 
-section h3 {
-  margin: .75rem auto .25 ;
+section.contact h3 {
+  margin: 1rem 0 0.5rem 0;
+}
+
+section.contact input.submitBtn{
+  margin: 0 0 2rem;
 }
