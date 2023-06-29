@@ -14,7 +14,7 @@
       "phone": 1235554545,
       "websiteUrl": "https://company2.com",
       "imageUrl": "https://yhipolito.github.io/WDD230/chamber/images/company2.png",
-      "membershipLevel": "Gold"
+      "membershipLevel": "Silver"
     },
     {
       "name": "Company 3",
@@ -22,7 +22,7 @@
       "phone": 1235554545,
       "websiteUrl": "https://company3.com",
       "imageUrl": "https://yhipolito.github.io/WDD230/chamber/images/company3.png",
-      "membershipLevel": "Gold"
+      "membershipLevel": "Silver"
     },
     {
       "name": "Company 4",
@@ -30,7 +30,7 @@
       "phone": 1235554545,
       "websiteUrl": "https://company4.com",
       "imageUrl": "https://yhipolito.github.io/WDD230/chamber/images/company4.png",
-      "membershipLevel": "Gold"
+      "membershipLevel": "Silver"
     },
     {
       "name": "Company 5",
@@ -54,7 +54,7 @@
       "phone": 1235554545,
       "websiteUrl": "https://company7.com",
       "imageUrl": "https://yhipolito.github.io/WDD230/chamber/images/company7.png",
-      "membershipLevel": "Gold"
+      "membershipLevel": "Bronze"
     },
     {
       "name": "Company 8",
@@ -62,7 +62,7 @@
       "phone": 1235554545,
       "websiteUrl": "https://company8.com",
       "imageUrl": "https://yhipolito.github.io/WDD230/chamber/images/company8.png",
-      "membershipLevel": "Gold"
+      "membershipLevel": "Bronze"
     },
     {
       "name": "Company 9",
@@ -70,7 +70,7 @@
       "phone": 1235554545,
       "websiteUrl": "https://company9.com",
       "imageUrl": "https://yhipolito.github.io/WDD230/chamber/images/company9.png",
-      "membershipLevel": "Gold"
+      "membershipLevel": "Bronze"
     }
   ]
 }

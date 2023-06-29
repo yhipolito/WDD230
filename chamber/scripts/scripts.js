@@ -167,6 +167,7 @@ getCompanyData();
 
 const displayCompanies = (companies) => {
   const cards = document.querySelector("article"); // select the output container element
+  const divSpot = document.querySelector(".spotlights");
 
   companies.forEach((company) => {
     // Create elements to add to the div.cards element
@@ -208,6 +209,10 @@ const displayCompanies = (companies) => {
     card.appendChild(membershipLevel);
 
     cards.appendChild(card);
+    
+    const yazelList = companies.filter(company => company.membershipLevel == 'Gold');
+    console.log(yazelList);
+
   }); // end of forEach loop
 }; // end of function expression
 
