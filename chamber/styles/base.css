@@ -211,7 +211,20 @@ figcaption {
 }
 
 div p {
-  margin: 1vw 0.5vw;
+  margin: 1rem 0.5vw;
+}
+
+div.event, div.news {
+  padding: 0 1rem;
+}
+
+div.news ul{
+  margin: 1rem 2rem;
+  text-align: left;
+}
+
+div h3 {
+  padding-top: 1rem;
 }
 
 .spotlights {
