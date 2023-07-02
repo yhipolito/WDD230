@@ -36,17 +36,20 @@
     /* padding: 1rem 3.5rem; */
   }
 
-  /* .active {
-    background-color: hsla(11,100%,52.2%,1);
-    font-weight: bolder;
-    font-size: larger;
-  } */
-
   main {
     display: grid;
     grid-template-columns: 60% 40%;
   }
-  div.spotlight3 {
+  /* div.spotlight3 {
+    display: none;
+  } */
+
+  /* .spotlights {
+    display: flex;
+    flex-direction: none;
+  } */
+
+  div.spotlights section:nth-child(3){
     display: none;
   }
 
@@ -63,6 +66,12 @@
   div.spotlights {
     grid-column: 1/3;
     grid-row: 3/4;
+    flex-direction: row;
+  }
+
+  div.spotlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   div.news {

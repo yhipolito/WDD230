@@ -63,7 +63,7 @@
     /* align-items: baseline; */
   }
 
-  section div.spotlight3 {
+  div.spotlights section:nth-child(3){
     display: block;
   }
 
@@ -82,6 +82,11 @@
   div.spotlights {
     grid-column: 3/4;
     grid-row: 1/4;
+    flex-direction: column;
+  }
+
+  div.spotlights {
+    display: flex;
   }
 
   div.news {

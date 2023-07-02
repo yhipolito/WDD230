@@ -171,8 +171,6 @@ async function getSpotslightsData(){
   const response = await fetch(url);
   const data = await response.json();
   const goldList = data.companies.filter(item => item.membershipLevel === "Gold");
-  console.log(data.companies);
-  console.log(goldList);
   displayCompanies(goldList,spotlights);
 }
 
