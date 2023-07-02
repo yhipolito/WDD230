@@ -1,24 +1,9 @@
 /* 64rem is also 1028px when basefont is 16px*/
 @media only screen and (min-width: 64rem) {
-  header nav ul li a {
-    margin: 0.5rem 1rem;
-  }
-
   header nav button {
     display: none;
   }
-
-  header nav ul#primaryNav {
-    display: flex;
-    /* margin-left: 2vw; */
-    border-left: 1px solid rgba(0, 0, 0, 0.3);
-  }
-
-  header nav ul li a {
-    border-top: none;
-    border-right: 1px solid rgba(0, 0, 0, 0.3);
-  }
-
+  
   .top-bar {
     display: grid;
     font-size: 1.7rem;
@@ -48,7 +33,6 @@
   main {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    margin: 1rem 6rem;
     gap: 1rem;
     font-size: 1.3rem;
   }
@@ -60,7 +44,6 @@
 
   article.list section {
     font-size: 1.3rem;
-    /* align-items: baseline; */
   }
 
   div.spotlights section:nth-child(3){
