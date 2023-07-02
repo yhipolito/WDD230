@@ -40,14 +40,6 @@
     display: grid;
     grid-template-columns: 60% 40%;
   }
-  /* div.spotlight3 {
-    display: none;
-  } */
-
-  /* .spotlights {
-    display: flex;
-    flex-direction: none;
-  } */
 
   div.spotlights section:nth-child(3){
     display: none;
