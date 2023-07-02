@@ -155,20 +155,33 @@ function displayResults(weatherData) {
 ///-------------DIRECTORY COMPANIES--------///
 
 const url = "https://yhipolito.github.io/WDD230/chamber/json/data.json";
+const cards = document.querySelector("article");
+const spotlights = document.querySelector(".spotlights");
 
 async function getCompanyData() {
   const response = await fetch(url);
   const data = await response.json();
-  displayCompanies(data.companies);
-  displaySpotlights(data.companies);
+  displayCompanies(data.companies, cards);
+  // I added an new argument to this function displayCompanies to pass cards element.
   // console.table(data.companies);
   // note that we reference the prophet array of the data object given the structure of the json file
 }
-getCompanyData();
 
-const displayCompanies = (companies) => {
-  const cards = document.querySelector("article"); // select the output container element
-  const spotlights = document.querySelector(".spotlights");
+async function getSpotslightsData(){
+  const response = await fetch(url);
+  const data = await response.json();
+  const goldList = data.companies.filter(item => item.membershipLevel === "Gold");
+  console.log(data.companies);
+  console.log(goldList);
+  displayCompanies(goldList,spotlights);
+}
+
+getCompanyData();
+getSpotslightsData();
+
+const displayCompanies = (companies, container) => {
+  // const cards = document.querySelector("article"); 
+  // select the output container element
 
   companies.forEach((company) => {
     // Create elements to add to the div.cards element
@@ -208,15 +221,9 @@ const displayCompanies = (companies) => {
     card.appendChild(phone);
     card.appendChild(website);
     card.appendChild(membershipLevel);
-
-    cards.appendChild(card);
+    container.appendChild(card);
   });
   // end of forEach loop
-  
-  const yazelList = companies.filter(company => company.membershipLevel == 'Gold');
-  console.log(yazelList);
-  console.log(cards);
-}; // end of function expression
 
 /*-------------Grid-List------------------*/
 const gridbutton = document.querySelector("#grid");
@@ -236,4 +243,4 @@ listbutton.addEventListener("click", showList); // example using defined functio
 function showList() {
   display.classList.add("list");
   display.classList.remove("grid");
-}
+}}
