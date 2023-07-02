@@ -25,15 +25,15 @@
   }
 
   header nav ul#primaryNav {
-    display: flex;
-    /* margin-left: 2vw; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     border-left: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: center;
   }
 
   header nav ul li a {
     border-top: none;
     border-right: 1px solid rgba(0, 0, 0, 0.3);
-    /* padding: 1rem 3.5rem; */
   }
 
   main {
