@@ -162,9 +162,9 @@ header nav ul.open {
 }
 
 time {
-  margin: 2vw 1%;
+  margin: 1rem 1%;
   border: 1px solid #bbb;
-  padding: 2vw;
+  padding: 1rem;
   background-color: #eee;
   text-align: center;
 }
