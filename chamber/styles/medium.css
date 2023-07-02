@@ -118,7 +118,8 @@
   div.contact {
     grid-column: 2/3;
     text-align: center;
-    margin: 3vw 2vw;
+    padding-top: 2.5rem;
+    /* margin: 3vw 2vw; */
   }
   div.bottom {
     grid-column: 1/3;

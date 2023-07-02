@@ -456,6 +456,10 @@ figure {
   border: none;
 }
 
+div.weather figure img{
+  width: 100px;
+}
+
 figure img, figure p {
   grid-row: 1/2;
 }
