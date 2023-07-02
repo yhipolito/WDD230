@@ -134,6 +134,7 @@ header nav ul li.active a {
 header nav ul li a:hover {
   /* background-color: rgba(0, 0, 0, 0.3); */
   background-color: #53b3ed;
+  color: #fff;
 }
 
 header nav ul {
