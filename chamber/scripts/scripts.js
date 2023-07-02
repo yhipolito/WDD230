@@ -160,14 +160,15 @@ async function getCompanyData() {
   const response = await fetch(url);
   const data = await response.json();
   displayCompanies(data.companies);
-  console.table(data.companies);
+  displaySpotlights(data.companies);
+  // console.table(data.companies);
   // note that we reference the prophet array of the data object given the structure of the json file
 }
 getCompanyData();
 
 const displayCompanies = (companies) => {
   const cards = document.querySelector("article"); // select the output container element
-  const divSpot = document.querySelector(".spotlights");
+  const spotlights = document.querySelector(".spotlights");
 
   companies.forEach((company) => {
     // Create elements to add to the div.cards element
@@ -209,11 +210,12 @@ const displayCompanies = (companies) => {
     card.appendChild(membershipLevel);
 
     cards.appendChild(card);
-    
-    const yazelList = companies.filter(company => company.membershipLevel == 'Gold');
-    console.log(yazelList);
-
-  }); // end of forEach loop
+  });
+  // end of forEach loop
+  
+  const yazelList = companies.filter(company => company.membershipLevel == 'Gold');
+  console.log(yazelList);
+  console.log(cards);
 }; // end of function expression
 
 /*-------------Grid-List------------------*/

@@ -126,12 +126,14 @@ header nav ul li a {
 }
 
 header nav ul li.active a {
-  background-color: rgba(0, 0, 0, 0.2);
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  background-color: rgba(0, 0, 0, 0.3);
   color: #fff;
 }
 
 header nav ul li a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  background-color: #53b3ed;
 }
 
 header nav ul {
@@ -483,7 +485,3 @@ section.contact input.submitBtn{
 }
 
 /*------------------spotlights-------------------*/
-
-section.companies:first{
-  display: none;
-}
